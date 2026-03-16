@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Sumit Singh | Data Analyst</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,163 +15,223 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Inter',sans-serif;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#0f172a;
+
+background: linear-gradient(-45deg,#0f172a,#020617,#1e293b,#0ea5e9);
+background-size:400% 400%;
+animation:gradient 12s ease infinite;
+
 color:white;
-scroll-behavior:smooth;
+}
+
+@keyframes gradient{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
 }
 
 nav{
+
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:#020617;
-position:sticky;
-top:0;
+padding:25px 10%;
+position:fixed;
+width:100%;
+backdrop-filter:blur(10px);
+background:rgba(0,0,0,0.2);
 z-index:1000;
+
 }
 
 nav h2{
+
 color:#38bdf8;
+letter-spacing:2px;
+
 }
 
 nav ul{
+
 display:flex;
-gap:25px;
+gap:30px;
 list-style:none;
+
 }
 
 nav a{
-color:white;
-text-decoration:none;
-font-size:14px;
-}
 
-nav a:hover{
-color:#38bdf8;
+text-decoration:none;
+color:white;
+font-size:14px;
+
 }
 
 .hero{
-height:90vh;
+
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
+
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:10px;
+
+font-size:60px;
+font-weight:700;
+
 }
 
 .hero span{
+
 color:#38bdf8;
+
 }
 
 .hero p{
+
 max-width:600px;
-opacity:.8;
-margin-bottom:30px;
+margin-top:15px;
+opacity:.85;
+
 }
 
 .btn{
-padding:12px 28px;
-background:#38bdf8;
-border:none;
-border-radius:6px;
+
+margin-top:30px;
+padding:14px 32px;
+border-radius:30px;
+background:linear-gradient(45deg,#38bdf8,#22d3ee);
 color:black;
-font-weight:bold;
-cursor:pointer;
+font-weight:600;
 text-decoration:none;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+
 }
 
 section{
-padding:80px 10%;
+
+padding:120px 10%;
+
 }
 
-.section-title{
-font-size:32px;
-margin-bottom:40px;
+.title{
+
 text-align:center;
+font-size:36px;
+margin-bottom:60px;
+
+}
+
+.about{
+
+max-width:700px;
+margin:auto;
+text-align:center;
+opacity:.9;
+
 }
 
 .skills{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:25px;
+
 }
 
 .skill{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
+
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:14px;
 text-align:center;
-transition:.3s;
+transition:.4s;
+
 }
 
 .skill:hover{
-transform:translateY(-5px);
-background:#334155;
+
+transform:translateY(-10px);
+background:rgba(255,255,255,0.15);
+
 }
 
 .projects{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+
 }
 
 .project{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-transition:.3s;
+
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:18px;
+transition:.4s;
+
 }
 
 .project:hover{
-transform:translateY(-8px);
-background:#334155;
+
+transform:translateY(-12px) scale(1.02);
+
 }
 
 .project h3{
+
 margin-bottom:10px;
+
 }
 
 .contact{
+
 text-align:center;
+
+}
+
+.contact p{
+
+margin:8px 0;
+
 }
 
 footer{
-background:#020617;
+
 text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:32px;
-}
-
-nav ul{
-display:none;
-}
+padding:30px;
+margin-top:60px;
+opacity:.7;
 
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
-<h2>Sumit</h2>
+
+<h2>SUMIT</h2>
 
 <ul>
 <li><a href="#about">About</a></li>
@@ -188,23 +248,26 @@ display:none;
 <h1>Hi, I'm <span>Sumit Singh</span></h1>
 
 <p>
-Data Analyst passionate about turning data into insights using SQL,
-Python and Power BI.
+Data Analyst transforming raw data into meaningful business insights
+using SQL, Python and Power BI.
 </p>
 
-<a class="btn" href="#projects">View Projects</a>
+<a href="#projects" class="btn">Explore My Work</a>
 
 </section>
 
 
 <section id="about">
 
-<h2 class="section-title">About Me</h2>
+<h2 class="title">About Me</h2>
 
-<p style="text-align:center; max-width:700px; margin:auto; opacity:.8;">
-I am a Data Analyst with experience in SQL, Power BI and Python.
-I love solving business problems using data and building analytics
+<p class="about">
+
+I specialize in analyzing complex datasets and building analytics
 solutions that help organizations make smarter decisions.
+My expertise includes SQL analytics, Power BI dashboards,
+and machine learning models.
+
 </p>
 
 </section>
@@ -212,7 +275,7 @@ solutions that help organizations make smarter decisions.
 
 <section id="skills">
 
-<h2 class="section-title">Skills</h2>
+<h2 class="title">Skills</h2>
 
 <div class="skills">
 
@@ -220,8 +283,8 @@ solutions that help organizations make smarter decisions.
 <div class="skill">Python</div>
 <div class="skill">Power BI</div>
 <div class="skill">Machine Learning</div>
-<div class="skill">Data Visualization</div>
 <div class="skill">Statistics</div>
+<div class="skill">Data Visualization</div>
 
 </div>
 
@@ -230,7 +293,7 @@ solutions that help organizations make smarter decisions.
 
 <section id="projects">
 
-<h2 class="section-title">Projects</h2>
+<h2 class="title">Projects</h2>
 
 <div class="projects">
 
@@ -239,8 +302,10 @@ solutions that help organizations make smarter decisions.
 <h3>Customer Churn Prediction</h3>
 
 <p>
-Machine learning model predicting telecom customer churn using
-Python and scikit-learn.
+
+Built a machine learning model predicting telecom customer churn
+with Python and scikit-learn.
+
 </p>
 
 </div>
@@ -251,8 +316,10 @@ Python and scikit-learn.
 <h3>Restaurant Order Analytics</h3>
 
 <p>
-SQL + Power BI dashboard analyzing order trends and customer
-behavior.
+
+SQL + Power BI dashboard identifying order patterns and
+customer purchasing trends.
+
 </p>
 
 </div>
@@ -263,8 +330,10 @@ behavior.
 <h3>Marketing Campaign Analysis</h3>
 
 <p>
-Analyzed marketing data to identify high ROI channels and improve
-conversion rates.
+
+Analyzed marketing data to identify high ROI channels
+and optimize campaign performance.
+
 </p>
 
 </div>
@@ -276,14 +345,12 @@ conversion rates.
 
 <section id="contact">
 
-<h2 class="section-title">Contact</h2>
+<h2 class="title">Contact</h2>
 
 <div class="contact">
 
 <p>Email: your@email.com</p>
-
 <p>GitHub: github.com/yourusername</p>
-
 <p>LinkedIn: linkedin.com/in/yourprofile</p>
 
 </div>
@@ -293,7 +360,7 @@ conversion rates.
 
 <footer>
 
-<p>© 2026 Sumit Singh | Data Analyst</p>
+© 2026 Sumit Singh — Data Analyst Portfolio
 
 </footer>
 
